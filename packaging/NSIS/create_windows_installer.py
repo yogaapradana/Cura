@@ -60,6 +60,8 @@ def generate_nsi(source_path: str, dist_path: str, filename: str):
         destination = filename
     )
 
+    print(nsis_content)
+
     with open(dist_loc.joinpath("UltiMaker-Cura.nsi"), "w") as f:
         f.write(nsis_content)
 
